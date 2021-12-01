@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Alphée's Délices</title>
+<body>
+<header>
+    <a href="#" class="logo"><span>Alphée's </span> Délices</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Que Des Délices!!!</h2>
+        <p>Nous créons des souvenirs inoubliables en une bouchée.</p>
+        <a href="#" class="btn1">Notre Menu</a>
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>À</span> propos de nous</h2>
+            <p>Bienvenu au paradis de la pâtisserie</p>
+            <p>Alphée Délices vous proposes des patisseries de tous genres et à un prix abordable.</p>
+                <p>Cuisiner avec amour pour émerveiller les papilles de nos clients est notre but.
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./images/logo.jpeg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>M</span>enu</h2>
+        <p>NOS DOUX CLASSIQUES.</p>
+        <p>Laissez-nous mettre le sourire sur vôtre visage.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/box.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Box personnalisable</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/cake1.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Gâteau au chocolat et aux biscuits</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/cake.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Cake au chocolat</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/jus en bouteille.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Jus de fruit naturel</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/Biscuits.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Biscuits d'anniversaire personnalisables</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/cupcake.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Cupcakes</h3>
+            </div>
+        </div>
+       <div class="box">
+            <div class="imbox">
+                <img src="./images/lagloire.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Gâteau glacé au chocolat et aux biscuits</h3>
+            </div> 
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/Cupcake au choco.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Cupcakes au chocolat</h3>
+            </div> 
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/jus.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Cocktails aux choix</h3>
+            </div> 
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/fondant.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Créme brûlée aux pommes</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="titre">
+    <a href="#" class="btn1">Voir Plus</a>
+ </div>
+</section>
+ <section class="contact" id="contact">
+     <div class="titre noir">
+         <h2 class="titre-text"><span>C</span>ontact</h2>
+         <p>Mettons-nous au four.</p>
+         <p>Écrivez-nous au "+229 67428360" pour toutes vos commandes.</p>
+         <p>Disponibles du Lundi au Dimanche de 9h à 22h.</p>
+         <p>Adresse: Agla C/3469, pharmacie Les pylônes, 5ème von après la pharmacie.</p>
+     </div>
+ </section>
+ <div class="copyright">
+     <p>copyright 2021 <a href="#">Merveille GANGNI</a> {gangnimerveille29@gmail.com} Tous droits reservés.</p>
+ </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
